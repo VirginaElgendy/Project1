@@ -1,0 +1,795 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.6;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+
+}
+
+.home-list li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 25px;
+}
+.home-list{
+    float: right;
+    margin-right: 30px;
+    padding-top: 20px;
+    position: relative; 
+}
+a{
+    color: black;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 
+
+.home{
+    padding-top: 60px;
+    background-image: url(../images/background\(main\).png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    
+}
+
+.home-content{
+    font-size: 40px;
+    /* hero image */
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-title{
+    color: white;
+}
+.home-paragraph{
+    color: rgb(209, 209, 209);
+}
+.home-btn1 , .home-btn2{
+    width: 130px;
+    height: 50px;
+    font-size: 22px;
+
+}
+
+.first{
+    text-decoration: underline 4px red;
+}
+.sec:hover{
+    text-decoration: underline 4px red;
+} 
+
+
+ .home-btn1:hover, .home-btn2:hover{
+    background-color: rgba(218, 218, 218, 0.8);
+    border: none;
+} 
+
+/* //////////////////////////////////////////// */
+.branches{
+    height: 80vh;
+
+}
+.branches-container{
+    width: 85%;
+    margin: auto;
+    
+}
+.branches-parent{
+    overflow: auto;
+    
+}
+.branch-content{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 2px solid rgb(109, 109, 109);
+    padding: 10px 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.middle-branch{
+    margin:0px 5%;
+}
+.branch-content i{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.branch-inside-title{
+    font-size: 30px;
+    padding: 5px;
+}
+.branch-paragraph{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.branches-title{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+.line{
+    height: 5px;
+    width: 100px;
+    background-color: red;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.branch-content i{
+    color: red;
+}
+.branch-content a{
+    color: rgb(109, 109, 109);
+
+}
+
+.branch-content::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left:0;
+    color: black;
+
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.branch-content:hover::after {
+    width: 100%;
+    height:100%;
+    opacity:0.3;
+}
+.branch-content:hover{
+    color: rgb(58, 58, 58);
+}
+/* ////////////////////////////// */
+
+.product-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.product-container{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.product-parent{
+    overflow: auto;
+    height: 300px;
+}
+
+.product-item{
+    float: left;
+    width: 32%;
+    text-align: center;
+    /* padding: 10px 0px; */
+    position: relative;
+
+}
+
+.middle-product{
+    margin: 0 2%;
+}
+
+.hidden{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255,0.7);
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 40px 5px;
+    visibility: hidden;
+    transition: 1s;
+    
+}
+
+.product-content{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.product-item:hover .hidden{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.product-discription{
+    font-size: 22px;
+
+}
+.product-name{
+    font-size: 25px;
+    font-weight:700;
+}
+.icons{
+    color: black;
+    font-size: 40px;
+}
+ .product-image{
+    width: 360px;
+    height: 260px;
+} 
+
+/* /////////////////////////////////////// */
+.offer{
+    margin-top: 100px;
+}
+.offers-title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.offer-container{
+    width:80%;
+    margin: auto;
+
+}
+.offer-parent{
+    margin-bottom: 30px;
+    overflow: auto;
+}
+.offer-item{
+    float: left;
+    width: 30%;
+    text-align: left;
+    border: 2px solid rgb(109, 109, 109);
+    position: relative;
+    padding: 30px 20px 10px 70px; 
+    height: 350px;
+}
+.offer-middle{
+    margin: 0px 5%;
+}
+.offer-icons{
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.offer-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.offer-paragraph{
+    font-size: 25px;
+}
+
+.offer-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left:0;
+    color: black;
+
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.offer-item:hover::after {
+    width: 100%;
+    height:100%;
+    opacity:0.3;
+}
+
+.offer-item:hover {
+    color: rgb(58, 58, 58);
+}
+.offer-icons{
+    color: red;
+}
+
+/* /////////////////////////////////// */
+.choose{
+    height: 100vh;
+}
+.choose-container{
+    width: 85%;
+    margin: auto;
+}
+.choose-overflow{
+    padding-top: 150px;
+}
+.choose-title{
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.line1{
+    height: 5px;
+    width: 100px;
+    background-color: red;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+.choose-overflow, .choose-overflow2{
+    overflow: auto;
+}
+.choose-info{
+    float: left;
+    width:70%;
+}
+.choose-image{
+    float: right;
+}
+.choose-reasons-div{
+    margin-top: 20px;
+    font-size: 24px;
+    line-height:140% ;
+}
+.choose-reasons-div i{
+    color: red;
+    margin-right: 10px;
+}
+.list li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.list{
+    text-align: center;
+}
+.red{
+    background-color: red;
+}
+.grey{
+    background-color: grey;
+}
+.grey:hover{
+    background-color: red;
+}
+/* /////////////////////////////////////////// */
+
+.stats{
+    overflow: auto;
+    background-image: url(../images/relative-background1.jpg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.stats-container{
+    width: 70%;
+    margin: auto;
+}
+
+.stats-item{
+    color: white;
+    width: 25%;
+    float: left;
+    padding-top: 130px;
+    text-align: center;
+
+}
+
+.stats-item i{
+    font-size: 50px;
+}
+.stats h3{
+    font-size: 40px;
+}
+.stats p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* ///////////////////////////// */
+
+.top-header{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.top-container{
+    width: 80%;
+    margin: auto;
+}
+.top-parent{
+    overflow: auto;
+}
+.top-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 2px solid rgb(109, 109, 109);
+    position: relative;
+}
+.middle-top{
+    margin:0px 5%;
+}
+.top-price-div{
+    padding:25px 0px ;
+    border: 2px solid red;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 800;
+}
+.top-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    
+}
+.top-dis{
+    margin: 30px 20px;
+    line-height: 30px;
+}
+.top-more{
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100px;
+    border: 2px solid red;
+    background-color: white;
+    
+}
+
+.top-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left:0;
+    color: black;
+
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.top-item:hover::after {
+    width: 100%;
+    height:100%;
+    opacity:0.3;
+}
+.top-item:hover{
+    color: rgb(58, 58, 58);
+}
+
+/* //////////////////////////////////////// */
+
+.sales{
+    margin-top: 150px;
+    overflow: auto;
+    background-image: url(../images/overlayop1.jpg); 
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.sales a{
+    text-decoration: underline;
+    color: white;
+}
+.sales-container{
+    width: 65%;
+    margin: auto;
+}
+.sales-item{
+    float: left;
+    margin: auto;
+    width: 40%;
+    padding-top: 80px;
+    color: white;
+}
+.sales-parent{
+    overflow: auto;
+}
+.right{
+    margin-left: 10%;
+}
+.left{
+    margin-right: 10%;
+}
+.sales-pic img{
+    border-radius: 50%;
+}
+.sales-pic{
+    float: left;
+}
+.sales-name{
+    float: left;
+    margin: 30px 25px;
+}
+.pic-name{
+    overflow: auto;
+}
+.sales-paragraph{
+    margin-top: 15px;
+    font-size: 20px;
+}
+/* ////////////////////////////////////// */
+
+.team{
+    height: 90vh;
+} 
+.team-header{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+.team-container{
+    margin: auto;
+    width: 80%;
+
+}
+.team-content{
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-item{
+    float: left;
+    width: 30%;
+    background-color: rgb(202, 202, 202);
+    text-align: center;
+    padding: 14px 10px;
+    position: relative;
+}
+
+.div2{
+    margin: 0px 5%;
+}
+
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img img{
+    width:100%;
+}
+
+.team-icons{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    z-index: 3;
+}
+
+.team-icons a{
+    display: block ;
+    width: 50px;
+    height: 50px;
+    
+    color: black;
+    margin-left: auto;
+    font-size: 25px;
+}
+
+.team-item:hover  .team-icons{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.team-icons a i{
+    line-height: 50px;
+    background-color: rgba(255,0,0,0.7);
+    width: 50px;
+    height: 50px;
+}
+
+.team-info-title{
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.team-info-p{
+    color: rgb(112, 112, 112);
+    text-transform: uppercase;
+}
+
+.team-item:hover .team-info-title{
+    color: white;
+}
+
+.team-item:hover .team-info-p{
+    color: blue;
+}
+
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    right:0;
+
+    background-color: black;
+    opacity: 0;
+    transition: 1s;
+}
+
+.team-item:hover::after {
+    width: 100%;
+    height:100%;
+    opacity:0.2;
+}
+/* //////////////////////// */
+
+
+.recent-parent{
+    overflow: auto;
+    margin-bottom: 100px;
+} 
+.recent-container{
+    width: 90%;
+    margin: auto;
+}
+.recent-item{
+    float: left;
+    width: 32%;
+    margin: auto;
+    position: relative;
+}
+.recent-middle{
+    margin: 0px 2%;
+}
+.recent-header{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+.recent-icons{
+    padding: 0px 70px;
+    text-align: center;
+}
+.recent-icons i{
+    color: red;
+}
+.recent-paragraph{
+    margin: 20px;
+}
+.recent-info{
+    line-height: 25px;
+    margin:20px 0px;
+    margin-bottom: 20px;
+}
+.recent-paragraph a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    
+}
+
+.recent-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    right:0;
+
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.recent-item:hover::after {
+    width: 100%;
+    height:100%;
+    opacity:0.2;
+}
+.recent-image img{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+/* ////////////////////// */
+.footer{
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0.37);
+}
+.footer img{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: block;
+}
+.footer-links{
+    text-align: center;
+}
+.footer-links   i{
+    font-size: 30px;
+    padding: 10px;
+    z-index: 3;
+    color: black
+    
+}
+
+.footer-links li {
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    
+}
+.footer p{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(110, 110, 110);
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top:10px ;
+}
+.footer-links li:after {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+.footer-links li:hover::after {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    opacity:0.3;
+}
+.footer-links a{
+    position: relative;
+    z-index: 3;
+}
